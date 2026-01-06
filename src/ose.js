@@ -142,6 +142,19 @@ Hooks.once("init", async () => {
   await templates();
 });
 
+Hooks.on("init", async () => {
+  CONFIG.Actor.trackableAttributes = {
+    character: {
+      bar:   ["hp"],
+      value: ["ac.value", "aac.value",
+              "initiative.value", "initiative.mod", "initiative.total",
+              "saves.death.value", "saves.wand.value", "saves.paralysis.value", "saves.breath.value", "saves.spell.value",
+              "movement.base", "movement.encounter", "movement.overland",
+              "exploration.ft", "exploration.ld", "exploration.od", "exploration.sd"]
+    }
+  };
+});
+
 /**
  * This function runs after game data has been requested and loaded from the servers, so entities exist
  */
