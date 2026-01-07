@@ -147,10 +147,9 @@ Hooks.on("init", async () => {
     character: {
       bar:   ["hp"],
       value: ["ac.value", "aac.value",
-              "initiative.value", "initiative.mod", "initiative.total",
-              "saves.death.value", "saves.wand.value", "saves.paralysis.value", "saves.breath.value", "saves.spell.value",
               "movement.base", "movement.encounter", "movement.overland",
-              "exploration.ft", "exploration.ld", "exploration.od", "exploration.sd"]
+              "exploration.ft", "exploration.ld", "exploration.od", "exploration.sd",
+              "details.morale"]
     }
   };
 });

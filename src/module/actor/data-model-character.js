@@ -28,19 +28,12 @@ export default class OseDataModelCharacter extends foundry.abstract.TypeDataMode
       },
       this.scores.str.mod
     );
-
+    
     this.movement = new OseDataModelCharacterMove(
       this.encumbrance,
       this.config.movementAuto,
       this.movement.base
     );
-
-    // Version 1: Downward compatible, new field system.initiative.total = sum of the initiative determining parts value, mod, dex.mod
-    this.initiative.total = this.initiative.value + this.initiative.mod + this.scores.dex.mod;
-    // Version 2: Use initiative.value to store the sum of the different parts
-    // I did not find a way to change initiative.value via foundry, it is always 0
-    // Theoretically, it could be used to store the total initiative
-    // this.initiative.value = this.initiative.mod + this.scores.dex.mod;
 
     // @todo Once we create the new character sheet,
     //       we shouldn't need to list both AC schemes
