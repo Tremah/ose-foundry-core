@@ -354,5 +354,6 @@
   "TYPES.Item.container": "Container",
   "TYPES.Item.item": "Item",
   "TYPES.Item.spell": "Spell",
-  "TYPES.Item.weapon": "Weapon"
+  "TYPES.Item.weapon": "Weapon",
+  "TYPES.Actor.character": "Character"
 }

@@ -1,0 +1,108 @@
+<section class="flexrow" style="gap:5px; padding-bottom: 16px;">
+
+  <!-- ATTRIBUTES -->
+  <div style="border:2px solid #777;border-radius:4px; overflow:hidden;">
+    <div style="background: #777; color:black; padding:2px 8px; font-weight:bold; font-size:14pt;">
+      Attributes
+    </div>
+    <div style="display:flex; align-items:flex-start; padding:12px">
+      <div
+        style="
+          display:grid;
+          grid-template-columns: max-content auto;
+          column-gap: 12px;
+          row-gap: 8px;
+          align-items: center;
+        ">
+        <label style="padding-left: 8px;" for="system.scores.str.value">STR</label>
+        <input size="2" id="system.scores.str.value" name="system.scores.str.value" type="text" value="{{system.scores.str.value}}" data-dtype="String"/>
+
+        <label style="padding-left: 8px;" for="system.scores.int.value">INT</label>
+        <input size="2" id="system.scores.int.value" name="system.scores.int.value" type="text" value="{{system.scores.int.value}}" data-dtype="String"/>
+
+        <label style="padding-left: 8px;" for="system.scores.wis.value">WIS</label>
+        <input size="2" id="system.scores.wis.value" name="system.scores.wis.value" type="text" value="{{system.scores.wis.value}}" data-dtype="String"/>
+
+        <label style="padding-left: 8px;" for="system.scores.dex.value">DEX</label>
+        <input size="2" id="system.scores.dex.value" name="system.scores.dex.value" type="text" value="{{system.scores.dex.value}}" data-dtype="String"/>
+
+        <label style="padding-left: 8px;" for="system.scores.con.value">CON</label>
+        <input size="2" id="system.scores.con.value" name="system.scores.con.value" type="text" value="{{system.scores.con.value}}" data-dtype="String"/>
+
+        <label style="padding-left: 8px;" for="system.scores.cha.value">CHA</label>
+        <input size="2" id="system.scores.cha.value" name="system.scores.cha.value" type="text" value="{{system.scores.cha.value}}" data-dtype="String"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- SAVING THROWS -->
+  <div style="border:2px solid #777; border-radius:4px; overflow:hidden;">
+    <div style="background: #777; color:black; padding:2px 8px; font-weight:bold; font-size:14pt;">
+      Saving Throws
+    </div>
+    <div style="display:flex; align-items:flex-start; padding:12px;">
+      <div
+        style="
+          display:grid;
+          grid-template-columns: max-content auto;
+          column-gap: 12px;
+          row-gap: 8px;
+          align-items: center;
+        ">
+        <label style="padding-left: 8px;" for="system.saves.death.value">Death/Poison</label>
+        <input size="2" id="system.saves.death.value" name="system.saves.death.value" type="text" value="{{system.saves.death.value}}" data-dtype="String"/>
+
+        <label style="padding-left: 8px;" for="system.saves.wand.value">Magic Wands</label>
+        <input size="2" id="system.saves.wand.value" name="system.saves.wand.value" type="text" value="{{system.saves.wand.value}}" data-dtype="String"/>
+
+        <label style="padding-left: 8px;" for="system.saves.paralysis.value">Paralysis/Petrification</label>
+        <input size="2" id="system.saves.paralysis.value" name="system.saves.paralysis.value" type="text" value="{{system.saves.paralysis.value}}" data-dtype="String"/>
+
+        <label style="padding-left: 8px;" for="system.saves.breath.value">Breath Attacks</label>
+        <input size="2" id="system.saves.breath.value" name="system.saves.breath.value" type="text" value="{{system.saves.breath.value}}" data-dtype="String"/>
+
+        <label style="padding-left: 8px;" for="system.saves.spell.value">Spells, Rods, Staves</label>
+        <input size="2" id="system.saves.spell.value" name="system.saves.spell.value" type="text" value="{{system.saves.spell.value}}" data-dtype="String"/>
+
+        <label style="padding-left: 8px;" for="system.scores.wis.bonus">WIS Modifier</label>
+        <input size="2" id="system.scores.wis.bonus" name="system.scores.wis.bonus" type="text" value="{{system.scores.wis.bonus}}" data-dtype="String"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div style="border:2px solid #777; border-radius:4px; overflow:hidden;">
+    <div style="background: #777; color:black; padding:2px 8px; font-weight:bold; font-size:14pt;">
+      Skills
+    </div>
+    <div style="display:flex; align-items:flex-start; padding:12px;">
+      <div
+        style="
+          display:grid;
+          grid-template-columns: max-content auto;
+          column-gap: 12px;
+          row-gap: 8px;
+          align-items: center;
+        ">
+        <label style="padding-left: 8px;" for="skill_forage">Forage In The Wild</label>
+        <input size="2" id="skill_forage" name="skill_forage" type="text" value="NA"/>
+
+        <label style="padding-left: 8px;" for="system.exploration.ft">Find Room Trap</label>
+        <input size="2" id="system.exploration.ft" name="system.exploration.ft" type="text" value="{{system.exploration.ft}}"/>
+
+        <label style="padding-left: 8px;" for="skill_hunt">Hunt In The Wild</label>
+        <input size="2" id="skill_hunt" name="skill_hunt" type="text" value="NA"/>
+
+        <label style="padding-left: 8px;" for="system.exploration.ld">Listen At Door</label>
+        <input size="2" id="system.exploration.ld" name="system.exploration.ld" type="text" value="{{system.exploration.ld}}"/>
+
+        <label style="padding-left: 8px;" for="system.exploration.od">Open Stuck Door</label>
+        <input size="2" id="system.exploration.od" name="system.exploration.od" type="text" value="{{system.exploration.od}}"/>
+
+        <label style="padding-left: 8px;" for="system.exploration.sd">Find Secret Door</label>
+        <input size="2" id="system.exploration.sd" name="system.exploration.sd" type="text" value="{{system.exploration.sd}}"/>
+      </div>
+    </div>
+  </div>
+
+</section>

@@ -1,0 +1,171 @@
+<section class="flexrow" style="gap: 5px; padding-bottom: 16px; align-items: flex-start;">
+  <div style="border:2px solid #777; border-radius:4px; overflow:hidden;">
+    <!-- Top stripe / section title -->
+    <div style="background: #777; color:black; padding:2px 8px; font-weight:bold; font-size:14pt;">
+      Combat
+    </div>
+
+    <div style="display:flex; align-items:flex-start; padding:12px">
+      <div
+        style="
+          display:grid;
+          grid-template-columns: max-content auto max-content auto max-content auto;
+          column-gap: 12px;
+          row-gap: 8px;
+          align-items: center;
+        ">
+        <!-- Row 1 -->
+        <label style="padding-left: 8px;" for="system.hp.value">HP</label>
+        <input
+          size="2"
+          id="system.hp.value"
+          name="system.hp.value"
+          type="text"
+          value="{{system.hp.value}}"
+          placeholder="{{localize 'OSE.details.name'}}"
+          data-dtype="String"/>
+
+        <label style="padding-left: 8px;" for="system.hp.max">Max HP</label>
+        <input
+          size="2"
+          id="system.hp.max"
+          name="system.hp.max"
+          type="text"
+          value="{{system.hp.max}}"
+          placeholder="{{localize 'OSE.details.name'}}"
+          data-dtype="String"/>
+
+        <label style="padding-left: 8px;" for="system.scores.con.mod">CON Mod</label>
+        <input
+          size="2"
+          id="system.scores.con.mod"
+          name="system.scores.con.mod"
+          type="text"
+          value="{{system.scores.con.mod}}"
+          placeholder="{{localize 'OSE.details.name'}}"
+          data-dtype="String"/>
+
+        <!-- Row 2 -->
+        <label style="padding-left: 8px;" for="system.ac.value">AC</label>
+        <input
+          size="2"
+          id="system.ac.value"
+          name="system.ac.value"
+          type="text"
+          value="{{system.ac.value}}"
+          placeholder="{{localize 'OSE.details.name'}}"
+          data-dtype="String"/>
+
+        <label style="padding-left: 8px;" for="system.ac.naked">Naked AC</label>
+        <input
+          size="2"
+          id="system.ac.naked"
+          name="system.ac.naked"
+          type="text"
+          value="{{system.ac.naked}}"
+          placeholder="{{localize 'OSE.details.name'}}"
+          data-dtype="String"/>
+
+        <label style="padding-left: 8px;" for="system.scores.dex.mod">DEX Mod</label>
+        <input
+          size="2"
+          id="system.scores.dex.mod"
+          name="system.scores.dex.mod"
+          type="text"
+          value="{{system.scores.dex.mod}}"
+          placeholder="{{localize 'OSE.details.name'}}"
+          data-dtype="String"/>
+      </div>
+    </div>
+  </div>
+
+  <div style="border:2px solid #777; border-radius:4px; overflow:hidden;">
+    <!-- Top stripe / section title -->
+    <div style="background: #777; color:black; padding:2px 8px; font-weight:bold; font-size:14pt;">
+      Encounters
+    </div>
+
+    <div style="display:flex; align-items:flex-start; padding:12px">
+      <div
+        style="
+          display:grid;
+          grid-template-columns: max-content auto;
+          column-gap: 12px;
+          row-gap: 8px;
+          align-items: center;
+        ">
+        <!-- Row 1 -->
+        <label style="padding-left: 8px;" for="system.hp.value">DEX Mod To Init</label>
+        <input
+            size="2"
+            id="system.initiative.mod"
+            name="system.initiative.mod"
+            type="text"
+            value="{{system.initiative.mod}}"
+            placeholder="{{localize 'OSE.details.name'}}"
+            data-dtype="String"/>
+
+        <!-- Row 2 -->
+        <label style="padding-left: 8px;" for="system.hp.value">CHA Mod To Reactions</label>
+        <input
+          size="2"
+          id="system.cha.mod"
+          name="system.cha.mod"
+          type="text"
+          value="NA"
+          placeholder="{{localize 'OSE.details.name'}}"
+          data-dtype="String"/>
+      </div>
+    </div>
+  </div>
+
+  <div style="border:2px solid #777; border-radius:4px; overflow:hidden;">
+    <!-- Top stripe / section title -->
+    <div style="background: #777; color:black; padding:2px 8px; font-weight:bold; font-size:14pt;">
+      Movement
+    </div>
+
+    <div style="display:flex; align-items:flex-start; padding:12px">
+      <div
+        style="
+          display:grid;
+          grid-template-columns: max-content auto max-content auto;
+          column-gap: 12px;
+          row-gap: 8px;
+          align-items: center;
+        ">
+        <!-- Row 1 -->
+        <label style="padding-left: 8px;" for="system.movement.overland">Overland</label>
+        <input
+          size="2"
+          id="system.movement.overland"
+          name="system.movement.overland"
+          type="text"
+          value="{{system.movement.overland}}"
+          placeholder="{{localize 'OSE.details.name'}}"
+          data-dtype="String"/>
+
+        <label style="padding-left: 8px;" for="system.movement.base">Exploration</label>
+        <input
+          size="2"
+          id="system.movement.base"
+          name="system.movement.base"
+          type="text"
+          value="{{system.movement.base}}"
+          placeholder="{{localize 'OSE.details.name'}}"
+          data-dtype="String"/>
+
+        <!-- Row 2 -->
+        <label style="padding-left: 8px;" for="system.movement.encounter">Encounter</label>
+        <input
+          size="2"
+          id="system.movement.encounter"
+          name="system.movement.encounter"
+          type="text"
+          value="{{system.movement.encounter}}"
+          placeholder="{{localize 'OSE.details.name'}}"
+          data-dtype="String"/>
+      </div>
+    </div>
+  </div>
+</section>

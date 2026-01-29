@@ -36,6 +36,7 @@ import { OSECombatant } from "./module/combat/combatant";
 import TokenRulerOSE from "./module/actor/token-ruler";
 
 import "./e2e";
+import OseActorSheetV2 from "./module/actor/actor-sheet-V2";
 
 /* -------------------------------------------- */
 /*  Foundry VTT Initialization                  */
@@ -114,6 +115,15 @@ Hooks.once("init", async () => {
       types: ["character"],
       makeDefault: true,
       label: "OSE.SheetClassCharacter",
+    }
+  );
+  foundry.documents.collections.Actors.registerSheet(
+    game.system.id,
+    OseActorSheetV2,
+    {
+      types: ["character"],
+      makeDefault: false,
+      label: "OSE.SheetClassCharacterV2",
     }
   );
   foundry.documents.collections.Actors.registerSheet(

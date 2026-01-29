@@ -1,0 +1,52 @@
+<section class="flexrow" style="gap: 5px; padding-bottom: 16px; align-items: flex-start;">
+  <div style="border:2px solid #777; border-radius:4px; overflow:hidden;">
+    <!-- Top stripe / section title -->
+    <div style="background: #777; color:black; padding:2px 8px; font-weight:bold; font-size:14pt;">
+      Attack Rolls
+    </div>
+
+    <div style="display:flex; align-items:flex-start; padding:12px">
+      <div
+        style="
+          display:grid;
+          grid-template-columns: max-content auto max-content auto max-content auto;
+          column-gap: 12px;
+          row-gap: 8px;
+          align-items: center;
+        ">
+        <!-- Row 1 -->
+        <label style="padding-left: 8px;" for="system.thac0.mod.melee">Melee Bonus</label>
+        <input
+          size="2"
+          id="system.thac0.mod.melee"
+          name="system.thac0.mod.melee"
+          type="text"
+          value="{{system.thac0.mod.melee}}"
+          placeholder="{{localize 'OSE.details.name'}}"
+          data-dtype="String"/>
+
+        <label style="padding-left: 8px;" for="system.thac0.mod.missile">Missile Bonus</label>
+        <input
+          size="2"
+          id="system.thac0.mod.missile"
+          name="system.thac0.mod.missile"
+          type="text"
+          value="{{system.thac0.mod.missile}}"
+          placeholder="{{localize 'OSE.details.name'}}"
+          data-dtype="String"/>
+
+        <label style="padding-left: 8px;" for="system.thac0.bba">Attack Bonus (AAC)</label>
+        <input
+          size="2"
+          id="system.thac0.bba"
+          name="system.thac0.bba"
+          type="text"
+          value="{{system.thac0.bba}}"
+          placeholder="{{localize 'OSE.details.name'}}"
+          data-dtype="String"/>
+
+
+      </div>
+    </div>
+  </div>
+</section>

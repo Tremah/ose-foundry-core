@@ -1,0 +1,113 @@
+<section class="flexrow" style="padding-bottom: 16px;">
+  <div style="display: flex; align-items:stretch;">
+
+    <div style="border:2px solid #777; border-radius:4px; overflow:hidden; flex:1">
+      <!-- Top stripe / section title -->
+      <div style="background: #777; color:black; padding:2px 8px; font-weight:bold; font-size:14pt;">
+        General
+      </div>
+
+      <div style="display:flex; align-items:flex-start; padding:12px;">
+        <!-- GRID replaces table -->
+        <div
+          style="
+            display:grid;
+            grid-template-columns: max-content 1fr max-content 1fr;
+            column-gap: 12px;
+            row-gap: 8px;
+            align-items: center;
+            flex:1;
+          ">
+          <!-- Row 1 -->
+          <label style="padding-left: 8px;" for="name">Name</label>
+          <input
+            style="text-align:left; width:100%;"
+            id="name"
+            name="name"
+            type="text"
+            value="{{actor.name}}"
+            placeholder="{{localize 'OSE.details.name'}}"
+            data-dtype="String"/>
+
+          <label style="padding-left: 8px;" for="system.details.title">Title</label>
+          <input
+            style="text-align:left; width:100%;"
+            id="system.details.title"
+            name="system.details.title"
+            type="text"
+            value="{{system.details.title}}"
+            placeholder="{{localize 'OSE.details.title'}}"
+            data-dtype="String"/>
+
+          <!-- Row 2 -->
+          <label style="padding-left: 8px;" for="system.details.race">Race</label>
+          <input
+            style="text-align:left; width:100%;"
+            id="system.details.race"
+            name="system.details.race"
+            type="text"
+            value="{{system.details.race}}"
+            placeholder="{{localize 'OSE.details.race'}}"
+            data-dtype="String"/>
+
+          <label style="padding-left: 8px;" for="system.details.level">Level</label>
+          <input
+            style="text-align:left; width:100%;"
+            id="system.details.level"
+            name="system.details.level"
+            type="text"
+            value="{{system.details.level}}"
+            placeholder="{{localize 'OSE.details.level'}}"
+            data-dtype="String"/>
+
+          <!-- Row 3 -->
+          <label style="padding-left: 8px;" for="system.details.class">Class</label>
+          <input
+            style="text-align:left; width:100%;"
+            id="system.details.class"
+            name="system.details.class"
+            type="text"
+            value="{{system.details.class}}"
+            placeholder="{{localize 'OSE.details.class'}}"
+            data-dtype="String"/>
+
+          <label style="padding-left: 8px;" for="system.details.alignment">Alignment</label>
+          <input
+            style="text-align:left; width:100%;"
+            id="system.details.alignment"
+            name="system.details.alignment"
+            type="text"
+            value="{{system.details.alignment}}"
+            placeholder="{{localize 'OSE.details.alignment'}}"
+            data-dtype="String"/>
+
+          <!-- Row 4 -->
+          <label style="padding-left: 8px;" for="system.details.xp.value">XP</label>
+          <input
+            style="text-align:left; width:100%;"
+            id="system.details.xp.value"
+            name="system.details.xp.value"
+            type="text"
+            value="{{system.details.xp.value}}"
+            placeholder="{{localize 'OSE.xp'}}"
+            data-dtype="String"/>
+
+          <label style="padding-left: 8px;" for="system.details.xp.next">Next Level XP</label>
+          <input
+            style="text-align:left; width:100%;"
+            id="system.details.xp.next"
+            name="system.details.xp.next"
+            type="text"
+            value="{{system.details.xp.next}}"
+            placeholder="{{localize 'OSE.details.alignment'}}"
+            data-dtype="String"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portrait -->
+    <div style="display:flex; align-items:center; justify-content:center; flex:0 0 150px;">
+      <img class="profile-img" src="icons/svg/mystery-man.svg" data-edit="img" title="{{name}}" />
+    </div>
+  </div>
+</section>
